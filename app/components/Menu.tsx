@@ -80,7 +80,7 @@ export default function Menu() {
           </p>
           <h2
             className="text-4xl sm:text-5xl font-bold text-[#2C2C2C] mb-4"
-            style={{ fontFamily: "var(--font-playfair), serif" }}
+            style={{ fontFamily: "var(--font-oranienbaum), serif" }}
           >
             Our <span className="text-[#8B1A1A] italic">Menu</span>
           </h2>
@@ -113,7 +113,7 @@ export default function Menu() {
                 </span>
                 <h3
                   className="text-white font-bold text-lg"
-                  style={{ fontFamily: "var(--font-playfair), serif" }}
+                  style={{ fontFamily: "var(--font-oranienbaum), serif" }}
                 >
                   {cat.category}
                 </h3>

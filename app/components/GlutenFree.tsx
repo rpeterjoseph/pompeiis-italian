@@ -40,7 +40,7 @@ export default function GlutenFree() {
           </p>
           <h2
             className="text-4xl sm:text-5xl font-bold text-white mb-4"
-            style={{ fontFamily: "var(--font-playfair), serif" }}
+            style={{ fontFamily: "var(--font-oranienbaum), serif" }}
           >
             Gluten-Free <span className="text-[#E8C96B] italic">Friendly</span>
           </h2>
@@ -62,7 +62,7 @@ export default function GlutenFree() {
               </div>
               <h3
                 className="text-white font-bold text-base mb-2"
-                style={{ fontFamily: "var(--font-playfair), serif" }}
+                style={{ fontFamily: "var(--font-oranienbaum), serif" }}
               >
                 {option.title}
               </h3>

@@ -53,7 +53,7 @@ export default function Catering() {
             </p>
             <h2
               className="text-4xl sm:text-5xl font-bold text-[#2C2C2C] mb-4 leading-tight"
-              style={{ fontFamily: "var(--font-playfair), serif" }}
+              style={{ fontFamily: "var(--font-oranienbaum), serif" }}
             >
               Bring Italian to
               <br />
@@ -72,7 +72,7 @@ export default function Catering() {
 
             {/* Contact for catering */}
             <div className="bg-[#FDF6E3] border border-[#C9A84C]/20 rounded-2xl p-6 mb-6">
-              <p className="font-semibold text-[#2C2C2C] mb-3" style={{ fontFamily: "var(--font-playfair), serif" }}>
+              <p className="font-semibold text-[#2C2C2C] mb-3" style={{ fontFamily: "var(--font-oranienbaum), serif" }}>
                 Plan Your Event
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
@@ -110,7 +110,7 @@ export default function Catering() {
                 </div>
                 <h3
                   className="font-bold text-[#2C2C2C] mb-1 text-sm"
-                  style={{ fontFamily: "var(--font-playfair), serif" }}
+                  style={{ fontFamily: "var(--font-oranienbaum), serif" }}
                 >
                   {feature.title}
                 </h3>

@@ -47,7 +47,7 @@ export default function Hero() {
 
         <h1
           className="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-4 leading-tight"
-          style={{ fontFamily: "var(--font-playfair), serif" }}
+          style={{ fontFamily: "var(--font-oranienbaum), serif" }}
         >
           Pompeii&apos;s
           <br />

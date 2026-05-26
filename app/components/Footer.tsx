@@ -16,7 +16,7 @@ export default function Footer() {
           <div>
             <h2
               className="text-2xl font-bold text-[#C9A84C] mb-2"
-              style={{ fontFamily: "var(--font-playfair), serif" }}
+              style={{ fontFamily: "var(--font-oranienbaum), serif" }}
             >
               Pompeii&apos;s
             </h2>

@@ -11,7 +11,7 @@ export default function Contact() {
         </p>
         <h2
           className="text-4xl sm:text-5xl font-bold text-[#2C2C2C] mb-4"
-          style={{ fontFamily: "var(--font-playfair), serif" }}
+          style={{ fontFamily: "var(--font-oranienbaum), serif" }}
         >
           We&apos;d Love to
           <span className="text-[#8B1A1A] italic"> Hear From You</span>
@@ -32,7 +32,7 @@ export default function Contact() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
             </div>
-            <p className="font-bold text-[#2C2C2C] group-hover:text-white mb-1 transition-colors" style={{ fontFamily: "var(--font-playfair), serif" }}>
+            <p className="font-bold text-[#2C2C2C] group-hover:text-white mb-1 transition-colors" style={{ fontFamily: "var(--font-oranienbaum), serif" }}>
               Call Us
             </p>
             <p className="text-[#8B1A1A] group-hover:text-[#E8C96B] font-semibold text-sm transition-colors">
@@ -49,7 +49,7 @@ export default function Contact() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </div>
-            <p className="font-bold text-[#2C2C2C] mb-1" style={{ fontFamily: "var(--font-playfair), serif" }}>
+            <p className="font-bold text-[#2C2C2C] mb-1" style={{ fontFamily: "var(--font-oranienbaum), serif" }}>
               Email Us
             </p>
             <p className="text-[#C9A84C] group-hover:text-[#2C2C2C] font-medium text-xs break-all transition-colors">
@@ -69,7 +69,7 @@ export default function Contact() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
             </div>
-            <p className="font-bold text-[#2C2C2C] group-hover:text-white mb-1 transition-colors" style={{ fontFamily: "var(--font-playfair), serif" }}>
+            <p className="font-bold text-[#2C2C2C] group-hover:text-white mb-1 transition-colors" style={{ fontFamily: "var(--font-oranienbaum), serif" }}>
               Visit Us
             </p>
             <p className="text-[#5C6B2E] group-hover:text-[#E8C96B] font-medium text-xs leading-relaxed transition-colors">

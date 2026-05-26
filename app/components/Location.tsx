@@ -19,7 +19,7 @@ export default function Location() {
           </p>
           <h2
             className="text-4xl sm:text-5xl font-bold text-[#2C2C2C] mb-4"
-            style={{ fontFamily: "var(--font-playfair), serif" }}
+            style={{ fontFamily: "var(--font-oranienbaum), serif" }}
           >
             Hours &amp; <span className="text-[#8B1A1A] italic">Location</span>
           </h2>
@@ -92,7 +92,7 @@ export default function Location() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-bold text-[#2C2C2C]" style={{ fontFamily: "var(--font-playfair), serif" }}>
+                  <p className="font-bold text-[#2C2C2C]" style={{ fontFamily: "var(--font-oranienbaum), serif" }}>
                     Pompeii&apos;s Pizzeria &amp; Italian Eatery
                   </p>
                   <p className="text-gray-600 text-sm mt-0.5">1120 Military St</p>
@@ -109,7 +109,7 @@ export default function Location() {
               <div className="px-6 py-5 bg-[#8B1A1A]">
                 <h3
                   className="text-white font-bold text-xl flex items-center gap-2"
-                  style={{ fontFamily: "var(--font-playfair), serif" }}
+                  style={{ fontFamily: "var(--font-oranienbaum), serif" }}
                 >
                   <svg className="w-5 h-5 text-[#C9A84C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -152,7 +152,7 @@ export default function Location() {
                   <div className="text-2xl mb-1" role="img" aria-label={badge.label}>
                     {badge.icon}
                   </div>
-                  <p className="font-bold text-[#2C2C2C] text-sm" style={{ fontFamily: "var(--font-playfair), serif" }}>
+                  <p className="font-bold text-[#2C2C2C] text-sm" style={{ fontFamily: "var(--font-oranienbaum), serif" }}>
                     {badge.label}
                   </p>
                   <p className="text-gray-500 text-xs leading-relaxed mt-0.5">{badge.desc}</p>

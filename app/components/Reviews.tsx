@@ -53,7 +53,7 @@ export default function Reviews() {
           </p>
           <h2
             className="text-4xl sm:text-5xl font-bold text-[#2C2C2C] mb-4"
-            style={{ fontFamily: "var(--font-playfair), serif" }}
+            style={{ fontFamily: "var(--font-oranienbaum), serif" }}
           >
             Loved by the
             <span className="text-[#8B1A1A] italic"> Blue Water Community</span>
@@ -65,7 +65,7 @@ export default function Reviews() {
             <div className="text-center">
               <div
                 className="text-4xl font-bold text-[#2C2C2C]"
-                style={{ fontFamily: "var(--font-playfair), serif" }}
+                style={{ fontFamily: "var(--font-oranienbaum), serif" }}
               >
                 4.5
               </div>
@@ -123,7 +123,7 @@ export default function Reviews() {
             <div key={item.label} className="text-center bg-white rounded-xl p-5 shadow-sm border border-gray-100">
               <div
                 className="text-3xl font-bold text-[#8B1A1A] mb-1"
-                style={{ fontFamily: "var(--font-playfair), serif" }}
+                style={{ fontFamily: "var(--font-oranienbaum), serif" }}
               >
                 {item.stat}
               </div>

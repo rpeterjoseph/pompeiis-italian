@@ -54,7 +54,7 @@ export default function About() {
             </p>
             <h2
               className="text-4xl sm:text-5xl font-bold text-[#2C2C2C] mb-6 leading-tight"
-              style={{ fontFamily: "var(--font-playfair), serif" }}
+              style={{ fontFamily: "var(--font-oranienbaum), serif" }}
             >
               A Family Tradition
               <br />
@@ -105,7 +105,7 @@ export default function About() {
                 </div>
                 <h3
                   className="font-bold text-[#2C2C2C] mb-2"
-                  style={{ fontFamily: "var(--font-playfair), serif" }}
+                  style={{ fontFamily: "var(--font-oranienbaum), serif" }}
                 >
                   {item.title}
                 </h3>

@@ -30,7 +30,7 @@ export default function Navbar() {
           >
             <span
               className="text-xl font-bold text-[#C9A84C]"
-              style={{ fontFamily: "var(--font-playfair), serif" }}
+              style={{ fontFamily: "var(--font-oranienbaum), serif" }}
             >
               Pompeii&apos;s
             </span>
