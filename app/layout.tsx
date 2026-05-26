@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Oranienbaum, Lato } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const oranienbaum = Oranienbaum({
   subsets: ["latin"],
@@ -17,15 +19,18 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Pompeii's Pizzeria & Italian Eatery | Port Huron, MI",
+  title: {
+    template: "%s | Pompeii's Pizzeria & Italian Eatery",
+    default: "Pompeii's Pizzeria & Italian Eatery | Port Huron, MI",
+  },
   description:
-    "Family-owned Italian restaurant in Port Huron, MI since 2002. Serving homemade pizza, pasta, lasagna, catering & more in the Blue Water Area. Call (810) 966-3400.",
+    "The best Italian food in the Blue Water Area. Family-owned since 2002. Stone-oven pizza, homemade pasta, catering & a full bar. 1120 Military St, Port Huron, MI · (810) 966-3400.",
   keywords:
-    "Italian restaurant Port Huron, pizza Port Huron, pasta Port Huron, Pompeii's Italian, Blue Water Area restaurant, family restaurant Michigan, catering Port Huron",
+    "Italian restaurant Port Huron, pizza Port Huron, pasta Port Huron, Pompeii's Italian, Blue Water Area restaurant, family restaurant Michigan, catering Port Huron, stone oven pizza",
   openGraph: {
     title: "Pompeii's Pizzeria & Italian Eatery",
     description:
-      "Family-owned Italian restaurant in Port Huron, MI serving homemade pizza, pasta, lasagna & more since 2002.",
+      "The best Italian food in the Blue Water Area. Family-owned since 2002. Stone-oven pizza, homemade pasta & a full bar in Port Huron, MI.",
     type: "website",
     locale: "en_US",
   },
@@ -36,7 +41,7 @@ const jsonLd = {
   "@type": "Restaurant",
   name: "Pompeii's Pizzeria & Italian Eatery",
   description:
-    "Family-owned Italian restaurant in Port Huron, MI since 2002. Serving homemade-style pizza, pasta, lasagna & more in the Blue Water Area.",
+    "The best Italian food in the Blue Water Area. Family-owned since 2002 serving stone-oven pizza, homemade pasta, and more in Port Huron, MI.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "1120 Military St",
@@ -52,50 +57,26 @@ const jsonLd = {
   },
   telephone: "+18109663400",
   email: "pompeiis@sbcglobal.net",
-  servesCuisine: ["Italian", "Pizza", "Pasta"],
-  priceRange: "$$",
+  servesCuisine: ["Italian", "Pizza", "Pasta", "Seafood"],
+  priceRange: "$$-$$$",
   currenciesAccepted: "USD",
   paymentAccepted: "Cash, Credit Card",
   openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday"],
-      opens: "11:00",
-      closes: "21:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Thursday"],
-      opens: "11:00",
-      closes: "22:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Friday", "Saturday"],
-      opens: "11:00",
-      closes: "23:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Sunday"],
-      opens: "12:00",
-      closes: "21:00",
-    },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday"], opens: "11:00", closes: "21:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Thursday"], opens: "11:00", closes: "22:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Friday", "Saturday"], opens: "11:00", closes: "23:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Sunday"], opens: "12:00", closes: "21:00" },
   ],
   acceptsReservations: "True",
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.5",
     bestRating: "5",
-    ratingCount: "200",
+    ratingCount: "179",
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${oranienbaum.variable} ${lato.variable}`}>
       <head>
@@ -105,7 +86,9 @@ export default function RootLayout({
         />
       </head>
       <body style={{ fontFamily: "var(--font-lato), Lato, sans-serif" }}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

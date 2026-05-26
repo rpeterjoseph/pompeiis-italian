@@ -2,18 +2,23 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Menu", href: "#menu" },
-  { label: "Catering", href: "#catering" },
-  { label: "Hours & Location", href: "#location" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Menu", href: "/menu" },
+  { label: "Catering", href: "/catering" },
+  { label: "Events", href: "/events" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
     <nav
@@ -23,36 +28,36 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link
-            href="#home"
-            className="flex items-center gap-2"
-            aria-label="Pompeii's Pizzeria home"
-          >
+          <Link href="/" className="flex items-center gap-3" aria-label="Pompeii's Pizzeria home">
             <span
               className="text-xl font-bold text-[#C9A84C]"
               style={{ fontFamily: "var(--font-oranienbaum), serif" }}
             >
               Pompeii&apos;s
             </span>
-            <span className="hidden sm:block text-sm text-[#FDF6E3]/70 font-light tracking-widest uppercase">
-              Pizzeria & Italian Eatery
+            <span className="hidden lg:block text-xs text-[#FDF6E3]/50 font-light tracking-[0.2em] uppercase border-l border-white/10 pl-3">
+              Pizzeria &amp; Italian Eatery
             </span>
           </Link>
 
           {/* Desktop links */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[#FDF6E3]/80 hover:text-[#C9A84C] text-sm font-medium tracking-wide transition-colors duration-200"
+                className={`px-3 py-2 text-sm font-medium tracking-wide rounded-lg transition-colors duration-200 ${
+                  isActive(link.href)
+                    ? "text-[#C9A84C] bg-white/5"
+                    : "text-[#FDF6E3]/70 hover:text-[#C9A84C] hover:bg-white/5"
+                }`}
               >
                 {link.label}
               </Link>
             ))}
             <a
               href="tel:+18109663400"
-              className="bg-[#8B1A1A] hover:bg-[#A52020] text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors duration-200"
+              className="ml-3 bg-[#8B1A1A] hover:bg-[#A52020] text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors duration-200"
             >
               (810) 966-3400
             </a>
@@ -84,7 +89,11 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="block py-3 text-[#FDF6E3]/80 hover:text-[#C9A84C] font-medium border-b border-white/5 transition-colors"
+              className={`block py-3 font-medium border-b border-white/5 transition-colors ${
+                isActive(link.href)
+                  ? "text-[#C9A84C]"
+                  : "text-[#FDF6E3]/80 hover:text-[#C9A84C]"
+              }`}
             >
               {link.label}
             </Link>

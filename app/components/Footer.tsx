@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 const footerLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Menu", href: "#menu" },
-  { label: "Catering", href: "#catering" },
-  { label: "Events", href: "#catering" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Menu", href: "/menu" },
+  { label: "Catering", href: "/catering" },
+  { label: "Events", href: "/events" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Footer() {
@@ -15,17 +17,20 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h2
-              className="text-2xl font-bold text-[#C9A84C] mb-2"
+              className="text-2xl font-bold text-[#C9A84C] mb-1"
               style={{ fontFamily: "var(--font-oranienbaum), serif" }}
             >
               Pompeii&apos;s
             </h2>
-            <p className="text-white/50 text-xs tracking-widest uppercase mb-4">
+            <p className="text-white/40 text-xs tracking-widest uppercase mb-4">
               Pizzeria &amp; Italian Eatery
             </p>
-            <p className="text-white/60 text-sm leading-relaxed max-w-xs">
-              Family-owned Italian restaurant proudly serving the Blue Water Area since 2002.
-              Fresh, homemade-style food made with love.
+            <p className="text-white/60 text-sm leading-relaxed max-w-xs mb-4">
+              The best Italian food in the Blue Water Area. Family-owned since 2002 —
+              consistency, great food &amp; great service.
+            </p>
+            <p className="text-[#C9A84C]/70 text-xs italic">
+              &ldquo;Freshest and homemade as possible.&rdquo;
             </p>
           </div>
 
@@ -37,12 +42,12 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.map((link) => (
                 <li key={link.label}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-white/60 hover:text-[#C9A84C] text-sm transition-colors duration-200"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -51,43 +56,42 @@ export default function Footer() {
           {/* Contact info */}
           <div>
             <h3 className="text-white font-semibold mb-4 text-sm tracking-widest uppercase">
-              Contact & Hours
+              Contact &amp; Hours
             </h3>
             <div className="space-y-3 text-sm">
-              <p className="text-white/60">
+              <div>
                 <span className="text-white/40 block text-xs uppercase tracking-wider mb-0.5">Address</span>
-                1120 Military St<br />Port Huron, MI 48060
-              </p>
-              <p className="text-white/60">
+                <p className="text-white/60">1120 Military St<br />Port Huron, MI 48060</p>
+              </div>
+              <div>
                 <span className="text-white/40 block text-xs uppercase tracking-wider mb-0.5">Phone</span>
-                <a href="tel:+18109663400" className="hover:text-[#C9A84C] transition-colors">
+                <a href="tel:+18109663400" className="text-white/60 hover:text-[#C9A84C] transition-colors">
                   (810) 966-3400
                 </a>
-              </p>
-              <p className="text-white/60">
+              </div>
+              <div>
                 <span className="text-white/40 block text-xs uppercase tracking-wider mb-0.5">Email</span>
-                <a href="mailto:pompeiis@sbcglobal.net" className="hover:text-[#C9A84C] transition-colors break-all">
+                <a href="mailto:pompeiis@sbcglobal.net" className="text-white/60 hover:text-[#C9A84C] transition-colors break-all">
                   pompeiis@sbcglobal.net
                 </a>
-              </p>
-              <div className="text-white/60">
+              </div>
+              <div>
                 <span className="text-white/40 block text-xs uppercase tracking-wider mb-1">Hours</span>
-                <p className="text-xs">Mon–Wed: 11AM–9PM</p>
-                <p className="text-xs">Thu: 11AM–10PM</p>
-                <p className="text-xs">Fri–Sat: 11AM–11PM</p>
-                <p className="text-xs">Sun: 12PM–9PM</p>
+                <p className="text-white/60 text-xs">Mon–Wed: 11AM–9PM</p>
+                <p className="text-white/60 text-xs">Thu: 11AM–10PM</p>
+                <p className="text-white/60 text-xs">Fri–Sat: 11AM–11PM</p>
+                <p className="text-white/60 text-xs">Sun: 12PM–9PM</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Divider */}
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-white/30 text-xs text-center sm:text-left">
             &copy; {new Date().getFullYear()} Pompeii&apos;s Pizzeria &amp; Italian Eatery. All rights reserved.
           </p>
           <p className="text-white/20 text-xs text-center sm:text-right">
-            1120 Military St, Port Huron, MI 48060 &middot; (810) 966-3400
+            #6 of 104 Restaurants in Port Huron · Tripadvisor 4.5 ★
           </p>
         </div>
       </div>

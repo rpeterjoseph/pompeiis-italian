@@ -1,24 +1,18 @@
 const reviews = [
   {
-    name: "Sarah M.",
-    source: "Tripadvisor",
+    name: "Tripadvisor Reviewer",
     rating: 5,
-    text: "Best Italian food in Port Huron, hands down! The lasagna is incredible and the staff makes you feel right at home. We've been coming here for years.",
-    date: "Recent",
+    text: "If I had to choose only one thing it would be the Fettuccine Carbonara. Unbelievable food, excellent staff — the #1 place to eat in Port Huron.",
   },
   {
-    name: "Tom W.",
-    source: "Tripadvisor",
+    name: "Tripadvisor Reviewer",
     rating: 5,
-    text: "Pompeii's is a Blue Water Area gem. The pizza is perfectly made every single time, the portions are generous, and the prices are fair. Highly recommend!",
-    date: "Recent",
+    text: "The pizza is also very good the next day warmed up. Organization and efficiency in feeding such a large group — perfect for a private event.",
   },
   {
-    name: "Linda K.",
-    source: "Tripadvisor",
+    name: "Tripadvisor Reviewer",
     rating: 4,
-    text: "We had our anniversary dinner here and it was wonderful. The pasta Alfredo was amazing, the staff was attentive, and the atmosphere was warm and cozy.",
-    date: "Recent",
+    text: "Salad, focaccia bread, and blush sauce manicotti were incredible. The staff makes you feel right at home. We've been coming here for years.",
   },
 ];
 
@@ -41,11 +35,7 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function Reviews() {
   return (
-    <section
-      id="reviews"
-      className="py-20 bg-[#FDF6E3]"
-      aria-label="Customer reviews"
-    >
+    <section id="reviews" className="py-20 bg-[#FDF6E3]" aria-label="Customer reviews">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <p className="text-[#8B1A1A] text-sm font-semibold tracking-[0.2em] uppercase mb-3">
@@ -60,7 +50,6 @@ export default function Reviews() {
           </h2>
           <div className="w-16 h-1 bg-[#C9A84C] mx-auto mb-6 rounded-full" />
 
-          {/* Overall rating badge */}
           <div className="inline-flex items-center gap-4 bg-white border border-[#C9A84C]/20 rounded-2xl px-6 py-4 shadow-sm">
             <div className="text-center">
               <div
@@ -74,51 +63,44 @@ export default function Reviews() {
             </div>
             <div className="w-px h-12 bg-gray-200" />
             <div className="text-left">
-              <p className="font-semibold text-[#2C2C2C] text-sm">Highly Rated</p>
-              <p className="text-gray-500 text-xs">200+ reviews</p>
+              <p className="font-semibold text-[#2C2C2C] text-sm">#6 of 104 Restaurants</p>
+              <p className="text-gray-500 text-xs">in Port Huron · 179 reviews</p>
               <p className="text-[#5C6B2E] text-xs font-medium mt-1">Family-Friendly · Local Favorite</p>
             </div>
           </div>
         </div>
 
-        {/* Review cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {reviews.map((review) => (
+          {reviews.map((review, i) => (
             <article
-              key={review.name}
+              key={i}
               className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100"
             >
               <div className="flex items-center justify-between mb-4">
                 <StarRating rating={review.rating} />
-                <span className="text-xs text-gray-400 bg-gray-50 px-2 py-1 rounded-full">
-                  {review.source}
-                </span>
+                <span className="text-xs text-gray-400 bg-gray-50 px-2 py-1 rounded-full">Tripadvisor</span>
               </div>
               <blockquote className="text-gray-600 text-sm leading-relaxed mb-4 italic">
                 &ldquo;{review.text}&rdquo;
               </blockquote>
               <footer className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-[#8B1A1A]/10 rounded-full flex items-center justify-center">
-                  <span className="text-[#8B1A1A] font-bold text-xs">
-                    {review.name.charAt(0)}
-                  </span>
+                  <svg className="w-4 h-4 text-[#8B1A1A]" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                  </svg>
                 </div>
-                <div>
-                  <p className="font-semibold text-[#2C2C2C] text-sm">{review.name}</p>
-                  <p className="text-gray-400 text-xs">{review.date}</p>
-                </div>
+                <p className="text-gray-500 text-xs">{review.name}</p>
               </footer>
             </article>
           ))}
         </div>
 
-        {/* Reputation highlights */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             { stat: "2002", label: "Year Established" },
             { stat: "4.5★", label: "Tripadvisor Rating" },
             { stat: "120", label: "Guest Capacity" },
-            { stat: "20+", label: "Years Serving the Community" },
+            { stat: "#6", label: "of 104 in Port Huron" },
           ].map((item) => (
             <div key={item.label} className="text-center bg-white rounded-xl p-5 shadow-sm border border-gray-100">
               <div
