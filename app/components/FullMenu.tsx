@@ -7,7 +7,7 @@ const menuData: MenuCategory[] = [
   {
     id: "appetizers",
     label: "Appetizers",
-    color: "#8B1A1A",
+    color: "#C8332A",
     items: [
       { name: "Garlic Escargot", description: "8 jumbo escargot, fresh garlic and green onion simmered in real butter over house bread", price: "$9.95" },
       { name: "Bruschetta Bread", description: "Classic Italian bruschetta on toasted house bread", price: "$8.50" },
@@ -23,7 +23,7 @@ const menuData: MenuCategory[] = [
   {
     id: "soups-salads",
     label: "Soups & Salads",
-    color: "#5C6B2E",
+    color: "#3D5C34",
     items: [
       { name: "Baked French Onion Soup", description: "Homemade French onion soup topped with croutons and three cheeses, baked to perfection", price: "$4.95" },
       { name: "Italian Chicken Florentine Soup", description: "Tomatoes, fresh vegetables, spinach and herbs simmered with chicken, served with a touch of pasta", price: "$4.50" },
@@ -36,7 +36,7 @@ const menuData: MenuCategory[] = [
   {
     id: "specialty-pizzas",
     label: "Specialty Pizzas",
-    color: "#8B1A1A",
+    color: "#C8332A",
     items: [
       { name: "Pompeii's Pie", description: "Cheese, pepperoni, ham, bacon, Italian sausage, green peppers and onions", price: "$15.00+" },
       { name: "Chicken Broccoli Alfredo Pizza", description: "Alfredo sauce with broccoli, chicken breast and house cheeses", price: "$15.00+" },
@@ -52,7 +52,7 @@ const menuData: MenuCategory[] = [
   {
     id: "calzones",
     label: "Calzones",
-    color: "#C9A84C",
+    color: "#D4941A",
     items: [
       { name: "Classic Calzone", description: "Homemade pizza dough stuffed with your favorite pizza toppings, cheese and pizza sauce", price: "$9.50" },
       { name: "Chicken Broccoli Alfredo Calzone", description: "Seasoned chicken breast, fresh broccoli, homemade Alfredo sauce and pizza cheese", price: "$10.50" },
@@ -65,7 +65,7 @@ const menuData: MenuCategory[] = [
   {
     id: "house-grilles",
     label: "House Grilles",
-    color: "#5C6B2E",
+    color: "#3D5C34",
     items: [
       { name: "Chicken Ranch Club Grille", description: "Grilled chicken, bacon, our ranch, cheese, lettuce and tomato", price: "$9.50" },
       { name: "Italian Grille", description: "Ham, salami, Italian sausage, green peppers, onions, lettuce, tomatoes, our dressing grilled with house cheeses", price: "$9.50" },
@@ -80,7 +80,7 @@ const menuData: MenuCategory[] = [
   {
     id: "lunch-specials",
     label: "Lunch Specials",
-    color: "#8B1A1A",
+    color: "#C8332A",
     items: [
       { name: "Pasta Alfredo", description: "Your favorite pasta tossed in our signature Alfredo sauce", price: "$8.50" },
       { name: "Ravioli", description: "Cheese or meat filled ravioli, covered in one of our homemade sauces", price: "$7.95" },
@@ -98,7 +98,7 @@ const menuData: MenuCategory[] = [
   {
     id: "pasta",
     label: "Traditional Pasta",
-    color: "#C9A84C",
+    color: "#D4941A",
     items: [
       { name: "Fettuccine Carbonara", description: "Sautéed ham, bacon, fresh mushroom and onions tossed with fettuccine in homemade garlic cream sauce", price: "$15.95", badge: "Chef's Favorite" },
       { name: "Lasagna", description: "Our tantalizing lasagna layered with hearty meat sauce, 4 cheeses, and baked to perfection", price: "$13.95" },
@@ -114,7 +114,7 @@ const menuData: MenuCategory[] = [
   {
     id: "chicken-sausage",
     label: "Chicken & Sausage",
-    color: "#8B1A1A",
+    color: "#C8332A",
     items: [
       { name: "Chicken Parmesan", description: "Tantalizing breaded chicken breast smothered with zesty marinara sauce and bubbling house cheeses over your choice of pasta", price: "$15.95" },
       { name: "Sausage & Pepper Romana", description: "Fresh Italian sausage sautéed with red and green peppers, fresh garlic, finished with homemade marinara-ricotta cheese sauce and pasta", price: "$15.95" },
@@ -127,7 +127,7 @@ const menuData: MenuCategory[] = [
   {
     id: "seafood",
     label: "Seafood",
-    color: "#5C6B2E",
+    color: "#3D5C34",
     items: [
       { name: "Grouper Asiago", description: "Pan fried with broccoli, red onions, tomatoes, black olives, white wine and baked with Asiago cheese over a blush sauce pasta", price: "$18.95" },
       { name: "Shrimp Lasagna Alfredo", description: "Our house lasagna topped with 3 jumbo sautéed shrimp and covered in homemade Alfredo", price: "$16.95" },
@@ -141,7 +141,7 @@ const menuData: MenuCategory[] = [
   {
     id: "veal-steak",
     label: "Veal & Steak",
-    color: "#C9A84C",
+    color: "#D4941A",
     items: [
       { name: "Steak Tortellini", description: "Fresh diced ribeye, mushrooms, onion and cheese tortellini tossed in a mushroom cream sauce", price: "$17.50" },
       { name: "Veal Parmesan", description: "Pounded-to-order cutlet, breaded and baked with marinara and cheese over pasta", price: "$18.95" },
@@ -153,7 +153,7 @@ const menuData: MenuCategory[] = [
   {
     id: "desserts",
     label: "Desserts",
-    color: "#8B1A1A",
+    color: "#C8332A",
     items: [
       { name: "Tiramisu", price: "$5.95" },
       { name: "Cannoli", price: "$3.95" },
@@ -167,7 +167,7 @@ const menuData: MenuCategory[] = [
   {
     id: "gluten-free",
     label: "Gluten-Free Options",
-    color: "#5C6B2E",
+    color: "#3D5C34",
     items: [
       { name: "Gluten-Free Pizza Crust", description: "Available for any pizza on our menu" },
       { name: "Gluten-Free Garlic Cheese Bread", description: "Our fan-favorite on a gluten-free base" },
@@ -190,7 +190,7 @@ export default function FullMenu() {
             <a
               key={cat.id}
               href={`#${cat.id}`}
-              className="text-xs font-semibold px-3 py-1.5 rounded-full border border-[#C9A84C]/30 text-[#8B1A1A] hover:bg-[#8B1A1A] hover:text-white hover:border-[#8B1A1A] transition-all duration-200"
+              className="text-xs font-semibold px-3 py-1.5 rounded-full border border-[#D4941A]/30 text-[#C8332A] hover:bg-[#C8332A] hover:text-white hover:border-[#C8332A] transition-all duration-200"
             >
               {cat.label}
             </a>
@@ -207,7 +207,7 @@ export default function FullMenu() {
                   style={{ backgroundColor: cat.color }}
                 />
                 <h2
-                  className="text-2xl sm:text-3xl font-bold text-[#2C2C2C]"
+                  className="text-2xl sm:text-3xl font-bold text-[#1E0E05]"
                   style={{ fontFamily: "var(--font-oranienbaum), serif" }}
                 >
                   {cat.label}
@@ -225,7 +225,7 @@ export default function FullMenu() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
                         <span
-                          className="font-semibold text-[#2C2C2C] text-sm leading-snug"
+                          className="font-semibold text-[#1E0E05] text-sm leading-snug"
                           style={{ fontFamily: "var(--font-oranienbaum), serif" }}
                         >
                           {item.name}
@@ -260,7 +260,7 @@ export default function FullMenu() {
 
         <p className="text-center text-gray-400 text-xs mt-12 border-t border-gray-100 pt-8">
           Prices subject to change. See in-store menu or call{" "}
-          <a href="tel:+18109663400" className="text-[#8B1A1A] hover:underline">
+          <a href="tel:+18109663400" className="text-[#C8332A] hover:underline">
             (810) 966-3400
           </a>{" "}
           for current pricing. Menu items and availability may vary.

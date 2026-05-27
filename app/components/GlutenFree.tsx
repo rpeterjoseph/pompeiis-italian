@@ -30,21 +30,21 @@ export default function GlutenFree() {
   return (
     <section
       id="gluten-free"
-      className="py-20 bg-[#5C6B2E]"
+      className="py-20 bg-[#3D5C34]"
       aria-label="Gluten-free options"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <p className="text-[#E8C96B] text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+          <p className="text-[#E8A832] text-sm font-semibold tracking-[0.2em] uppercase mb-3">
             Dietary Options
           </p>
           <h2
             className="text-4xl sm:text-5xl font-bold text-white mb-4"
             style={{ fontFamily: "var(--font-oranienbaum), serif" }}
           >
-            Gluten-Free <span className="text-[#E8C96B] italic">Friendly</span>
+            Gluten-Free <span className="text-[#E8A832] italic">Friendly</span>
           </h2>
-          <div className="w-16 h-1 bg-[#E8C96B] mx-auto mb-5 rounded-full" />
+          <div className="w-16 h-1 bg-[#E8A832] mx-auto mb-5 rounded-full" />
           <p className="text-white/80 max-w-2xl mx-auto text-lg">
             At Pompeii&apos;s, we believe everyone deserves a great Italian meal. We offer a variety of
             gluten-free options so all our guests can enjoy the food they love.
@@ -77,7 +77,7 @@ export default function GlutenFree() {
           </p>
           <a
             href="tel:+18109663400"
-            className="inline-flex items-center gap-2 bg-[#E8C96B] hover:bg-white text-[#2C2C2C] font-semibold px-7 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 bg-[#E8A832] hover:bg-white text-[#1E0E05] font-semibold px-7 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5"
           >
             Ask About Dietary Options
           </a>

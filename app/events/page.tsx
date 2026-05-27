@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "../components/PageHero";
+import ImagePlaceholder from "../components/ImagePlaceholder";
 
 export const metadata: Metadata = {
   title: "Events",
@@ -26,13 +27,13 @@ export default function EventsPage() {
       />
 
       {/* Capacity highlight */}
-      <section className="py-6 bg-[#C9A84C]">
+      <section className="py-6 bg-[#D4941A]">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <p
-            className="text-[#2C2C2C] font-bold text-lg"
+            className="text-[#1E0E05] font-bold text-lg"
             style={{ fontFamily: "var(--font-oranienbaum), serif" }}
           >
-            Pompeii&apos;s accommodates groups of <span className="text-[#8B1A1A]">up to 120 guests</span> for private on-site dining
+            Pompeii&apos;s accommodates groups of <span className="text-[#C8332A]">up to 120 guests</span> for private on-site dining
           </p>
         </div>
       </section>
@@ -40,26 +41,32 @@ export default function EventsPage() {
       {/* Event types */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Private dining room photo */}
+          <ImagePlaceholder
+            label="Private Dining Room"
+            sublabel="Up to 120 guests — event setup photo"
+            className="h-80 mb-14"
+          />
           <div className="text-center mb-12">
-            <p className="text-[#8B1A1A] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Perfect For</p>
+            <p className="text-[#C8332A] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Perfect For</p>
             <h2
-              className="text-4xl font-bold text-[#2C2C2C] mb-4"
+              className="text-4xl font-bold text-[#1E0E05] mb-4"
               style={{ fontFamily: "var(--font-oranienbaum), serif" }}
             >
               Every Occasion
             </h2>
-            <div className="w-14 h-1 bg-[#C9A84C] mx-auto rounded-full" />
+            <div className="w-14 h-1 bg-[#D4941A] mx-auto rounded-full" />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
             {eventTypes.map((event) => (
               <div
                 key={event.title}
-                className="bg-[#FDF6E3] rounded-2xl p-6 border border-[#C9A84C]/15 hover:border-[#C9A84C]/40 hover:shadow-md transition-all duration-200"
+                className="bg-[#FFF8EE] rounded-2xl p-6 border border-[#D4941A]/15 hover:border-[#D4941A]/40 hover:shadow-md transition-all duration-200"
               >
                 <div className="text-3xl mb-3">{event.icon}</div>
                 <h3
-                  className="font-bold text-[#2C2C2C] mb-2"
+                  className="font-bold text-[#1E0E05] mb-2"
                   style={{ fontFamily: "var(--font-oranienbaum), serif" }}
                 >
                   {event.title}
@@ -70,11 +77,11 @@ export default function EventsPage() {
           </div>
 
           {/* What to expect */}
-          <div className="bg-[#2C2C2C] rounded-3xl p-8 sm:p-10 text-white">
+          <div className="bg-[#1E0E05] rounded-3xl p-8 sm:p-10 text-white">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3
-                  className="text-2xl font-bold text-[#C9A84C] mb-4"
+                  className="text-2xl font-bold text-[#D4941A] mb-4"
                   style={{ fontFamily: "var(--font-oranienbaum), serif" }}
                 >
                   What to Expect
@@ -89,7 +96,7 @@ export default function EventsPage() {
                     "Warm, welcoming atmosphere that feels like a family gathering",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
-                      <span className="text-[#C9A84C] mt-0.5 flex-shrink-0">✓</span>
+                      <span className="text-[#D4941A] mt-0.5 flex-shrink-0">✓</span>
                       {item}
                     </li>
                   ))}
@@ -108,7 +115,7 @@ export default function EventsPage() {
                 <div className="flex flex-col gap-3">
                   <a
                     href="tel:+18109663400"
-                    className="flex items-center justify-center gap-2 bg-[#C9A84C] hover:bg-[#E8C96B] text-[#2C2C2C] font-semibold px-5 py-3 rounded-full transition-all duration-200"
+                    className="flex items-center justify-center gap-2 bg-[#D4941A] hover:bg-[#E8A832] text-[#1E0E05] font-semibold px-5 py-3 rounded-full transition-all duration-200"
                   >
                     Call (810) 966-3400
                   </a>

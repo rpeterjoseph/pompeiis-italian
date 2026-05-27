@@ -11,13 +11,31 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2C2C2C] text-white/70" role="contentinfo">
+    <footer className="bg-[#1E0E05] text-white/70" role="contentinfo">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div>
+            {/*
+              ── STAMP LOGO SLOT ───────────────────────────────────────────
+              Add your stamp logo to the footer:
+              1. Copy logo  →  /public/images/logo-stamp.png
+              2. Add `import Image from "next/image";` at top of file
+              3. Replace this div with:
+                 <div className="w-16 h-16 relative mb-3">
+                   <Image src="/images/logo-stamp.png" alt="Pompeii's" fill className="object-contain" />
+                 </div>
+              ─────────────────────────────────────────────────────────── */}
+            <div
+              className="w-14 h-14 border border-dashed border-[#D4941A]/30 rounded-full flex flex-col items-center justify-center mb-3"
+              title="Add logo-stamp.png to /public/images/"
+            >
+              <svg className="w-5 h-5 text-[#D4941A]/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
             <h2
-              className="text-2xl font-bold text-[#C9A84C] mb-1"
+              className="text-2xl font-bold text-[#D4941A] mb-1"
               style={{ fontFamily: "var(--font-oranienbaum), serif" }}
             >
               Pompeii&apos;s
@@ -29,7 +47,7 @@ export default function Footer() {
               The best Italian food in the Blue Water Area. Family-owned since 2002 —
               consistency, great food &amp; great service.
             </p>
-            <p className="text-[#C9A84C]/70 text-xs italic">
+            <p className="text-[#D4941A]/70 text-xs italic">
               &ldquo;Freshest and homemade as possible.&rdquo;
             </p>
           </div>
@@ -44,7 +62,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-white/60 hover:text-[#C9A84C] text-sm transition-colors duration-200"
+                    className="text-white/60 hover:text-[#D4941A] text-sm transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -65,13 +83,13 @@ export default function Footer() {
               </div>
               <div>
                 <span className="text-white/40 block text-xs uppercase tracking-wider mb-0.5">Phone</span>
-                <a href="tel:+18109663400" className="text-white/60 hover:text-[#C9A84C] transition-colors">
+                <a href="tel:+18109663400" className="text-white/60 hover:text-[#D4941A] transition-colors">
                   (810) 966-3400
                 </a>
               </div>
               <div>
                 <span className="text-white/40 block text-xs uppercase tracking-wider mb-0.5">Email</span>
-                <a href="mailto:pompeiis@sbcglobal.net" className="text-white/60 hover:text-[#C9A84C] transition-colors break-all">
+                <a href="mailto:pompeiis@sbcglobal.net" className="text-white/60 hover:text-[#D4941A] transition-colors break-all">
                   pompeiis@sbcglobal.net
                 </a>
               </div>

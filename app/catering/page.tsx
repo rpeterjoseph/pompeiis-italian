@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "../components/PageHero";
+import ImagePlaceholder from "../components/ImagePlaceholder";
 
 export const metadata: Metadata = {
   title: "Catering",
@@ -42,17 +43,23 @@ export default function CateringPage() {
       {/* Intro */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Catering food photo */}
+          <ImagePlaceholder
+            label="Pompeii's Catering Trays"
+            sublabel="Food spread / event setup photo"
+            className="h-72 mb-14"
+          />
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-[#8B1A1A] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Catering</p>
+              <p className="text-[#C8332A] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Catering</p>
               <h2
-                className="text-4xl font-bold text-[#2C2C2C] mb-5 leading-tight"
+                className="text-4xl font-bold text-[#1E0E05] mb-5 leading-tight"
                 style={{ fontFamily: "var(--font-oranienbaum), serif" }}
               >
                 Bring Pompeii&apos;s to
-                <br /><span className="text-[#8B1A1A] italic">Your Next Gathering</span>
+                <br /><span className="text-[#C8332A] italic">Your Next Gathering</span>
               </h2>
-              <div className="w-14 h-1 bg-[#C9A84C] mb-7 rounded-full" />
+              <div className="w-14 h-1 bg-[#D4941A] mb-7 rounded-full" />
               <p className="text-gray-600 text-lg leading-relaxed mb-5">
                 Whether it&apos;s a corporate lunch, a birthday celebration, a graduation, or a neighborhood
                 get-together — Pompeii&apos;s catering brings the flavors of our kitchen straight to your event.
@@ -62,9 +69,9 @@ export default function CateringPage() {
                 desserts. All items are prepared fresh to order. Just call ahead and we&apos;ll have
                 everything ready for pickup.
               </p>
-              <div className="bg-[#FDF6E3] border border-[#C9A84C]/20 rounded-2xl p-6">
+              <div className="bg-[#FFF8EE] border border-[#D4941A]/20 rounded-2xl p-6">
                 <p
-                  className="font-bold text-[#2C2C2C] mb-4"
+                  className="font-bold text-[#1E0E05] mb-4"
                   style={{ fontFamily: "var(--font-oranienbaum), serif" }}
                 >
                   Ready to Order?
@@ -72,13 +79,13 @@ export default function CateringPage() {
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
                     href="tel:+18109663400"
-                    className="flex items-center justify-center gap-2 bg-[#8B1A1A] hover:bg-[#A52020] text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5 shadow-md"
+                    className="flex items-center justify-center gap-2 bg-[#C8332A] hover:bg-[#D44035] text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5 shadow-md"
                   >
                     Call (810) 966-3400
                   </a>
                   <a
                     href="mailto:pompeiis@sbcglobal.net"
-                    className="flex items-center justify-center gap-2 border-2 border-[#8B1A1A] text-[#8B1A1A] hover:bg-[#8B1A1A] hover:text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+                    className="flex items-center justify-center gap-2 border-2 border-[#C8332A] text-[#C8332A] hover:bg-[#C8332A] hover:text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                   >
                     Email Us
                   </a>
@@ -90,16 +97,16 @@ export default function CateringPage() {
               {packages.map((pkg) => (
                 <div
                   key={pkg.title}
-                  className="bg-[#FDF6E3] rounded-2xl p-5 border border-[#C9A84C]/15 hover:border-[#C9A84C]/40 hover:shadow-md transition-all duration-200"
+                  className="bg-[#FFF8EE] rounded-2xl p-5 border border-[#D4941A]/15 hover:border-[#D4941A]/40 hover:shadow-md transition-all duration-200"
                 >
                   <h3
-                    className="font-bold text-[#2C2C2C] mb-2"
+                    className="font-bold text-[#1E0E05] mb-2"
                     style={{ fontFamily: "var(--font-oranienbaum), serif" }}
                   >
                     {pkg.title}
                   </h3>
                   <p className="text-gray-500 text-sm leading-relaxed mb-3">{pkg.description}</p>
-                  <span className="text-xs font-semibold text-[#5C6B2E] bg-[#5C6B2E]/10 px-2.5 py-1 rounded-full">
+                  <span className="text-xs font-semibold text-[#3D5C34] bg-[#3D5C34]/10 px-2.5 py-1 rounded-full">
                     {pkg.serves}
                   </span>
                 </div>
@@ -110,10 +117,10 @@ export default function CateringPage() {
       </section>
 
       {/* Why choose us */}
-      <section className="py-16 bg-[#FDF6E3]">
+      <section className="py-16 bg-[#FFF8EE]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
-            className="text-3xl font-bold text-[#2C2C2C] mb-10"
+            className="text-3xl font-bold text-[#1E0E05] mb-10"
             style={{ fontFamily: "var(--font-oranienbaum), serif" }}
           >
             Why Cater with Pompeii&apos;s?
@@ -127,7 +134,7 @@ export default function CateringPage() {
               <div key={item.title} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                 <div className="text-4xl mb-3">{item.icon}</div>
                 <h3
-                  className="font-bold text-[#2C2C2C] mb-2"
+                  className="font-bold text-[#1E0E05] mb-2"
                   style={{ fontFamily: "var(--font-oranienbaum), serif" }}
                 >
                   {item.title}

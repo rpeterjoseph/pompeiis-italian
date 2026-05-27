@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "../components/PageHero";
+import ImagePlaceholder from "../components/ImagePlaceholder";
 
 export const metadata: Metadata = {
   title: "Contact & Hours",
@@ -48,7 +49,7 @@ export default function ContactPage() {
                   href="https://www.google.com/maps/dir/?api=1&destination=1120+Military+St,+Port+Huron,+MI+48060"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-col items-center gap-1.5 bg-[#8B1A1A] hover:bg-[#A52020] text-white font-semibold py-4 rounded-2xl transition-all duration-200 hover:-translate-y-0.5 text-center"
+                  className="flex flex-col items-center gap-1.5 bg-[#C8332A] hover:bg-[#D44035] text-white font-semibold py-4 rounded-2xl transition-all duration-200 hover:-translate-y-0.5 text-center"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -57,7 +58,7 @@ export default function ContactPage() {
                 </a>
                 <a
                   href="tel:+18109663400"
-                  className="flex flex-col items-center gap-1.5 bg-[#C9A84C] hover:bg-[#E8C96B] text-[#2C2C2C] font-semibold py-4 rounded-2xl transition-all duration-200 hover:-translate-y-0.5 text-center"
+                  className="flex flex-col items-center gap-1.5 bg-[#D4941A] hover:bg-[#E8A832] text-[#1E0E05] font-semibold py-4 rounded-2xl transition-all duration-200 hover:-translate-y-0.5 text-center"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -66,7 +67,7 @@ export default function ContactPage() {
                 </a>
                 <a
                   href="mailto:pompeiis@sbcglobal.net"
-                  className="flex flex-col items-center gap-1.5 bg-[#5C6B2E] hover:bg-[#6d7e37] text-white font-semibold py-4 rounded-2xl transition-all duration-200 hover:-translate-y-0.5 text-center"
+                  className="flex flex-col items-center gap-1.5 bg-[#3D5C34] hover:bg-[#4A6E40] text-white font-semibold py-4 rounded-2xl transition-all duration-200 hover:-translate-y-0.5 text-center"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -76,23 +77,23 @@ export default function ContactPage() {
               </div>
 
               {/* Address card */}
-              <div className="bg-[#FDF6E3] rounded-2xl p-5 border border-[#C9A84C]/15">
-                <p className="font-bold text-[#2C2C2C] mb-3" style={{ fontFamily: "var(--font-oranienbaum), serif" }}>
+              <div className="bg-[#FFF8EE] rounded-2xl p-5 border border-[#D4941A]/15">
+                <p className="font-bold text-[#1E0E05] mb-3" style={{ fontFamily: "var(--font-oranienbaum), serif" }}>
                   Pompeii&apos;s Pizzeria &amp; Italian Eatery
                 </p>
                 <div className="space-y-2 text-sm text-gray-600">
                   <p>📍 1120 Military St, Port Huron, MI 48060</p>
-                  <p>📞 <a href="tel:+18109663400" className="hover:text-[#8B1A1A] transition-colors">(810) 966-3400</a></p>
-                  <p>✉️ <a href="mailto:pompeiis@sbcglobal.net" className="hover:text-[#8B1A1A] transition-colors break-all">pompeiis@sbcglobal.net</a></p>
+                  <p>📞 <a href="tel:+18109663400" className="hover:text-[#C8332A] transition-colors">(810) 966-3400</a></p>
+                  <p>✉️ <a href="mailto:pompeiis@sbcglobal.net" className="hover:text-[#C8332A] transition-colors break-all">pompeiis@sbcglobal.net</a></p>
                 </div>
               </div>
             </div>
 
             {/* Right: Hours */}
             <div>
-              <div className="bg-[#2C2C2C] rounded-2xl overflow-hidden shadow-md mb-5">
-                <div className="px-6 py-5 bg-[#8B1A1A] flex items-center gap-2">
-                  <svg className="w-5 h-5 text-[#C9A84C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-[#1E0E05] rounded-2xl overflow-hidden shadow-md mb-5">
+                <div className="px-6 py-5 bg-[#C8332A] flex items-center gap-2">
+                  <svg className="w-5 h-5 text-[#D4941A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <h2
@@ -108,12 +109,12 @@ export default function ContactPage() {
                       <div>
                         <span className="text-white/80 font-medium text-sm">{item.days}</span>
                         {item.note && (
-                          <span className="ml-2 text-[10px] bg-[#C9A84C]/20 text-[#C9A84C] px-1.5 py-0.5 rounded-full">
+                          <span className="ml-2 text-[10px] bg-[#D4941A]/20 text-[#D4941A] px-1.5 py-0.5 rounded-full">
                             {item.note}
                           </span>
                         )}
                       </div>
-                      <span className="text-[#C9A84C] font-semibold text-sm">{item.time}</span>
+                      <span className="text-[#D4941A] font-semibold text-sm">{item.time}</span>
                     </div>
                   ))}
                 </div>
@@ -121,6 +122,13 @@ export default function ContactPage() {
                   <p className="text-white/40 text-xs text-center">Hours may vary on holidays — call ahead to confirm.</p>
                 </div>
               </div>
+
+              {/* Exterior photo */}
+              <ImagePlaceholder
+                label="Restaurant Exterior"
+                sublabel="1120 Military St, Port Huron, MI"
+                className="h-48 mb-5"
+              />
 
               {/* Services */}
               <div className="grid grid-cols-2 gap-3">
@@ -130,9 +138,9 @@ export default function ContactPage() {
                   { label: "Catering", icon: "🎉", desc: "Trays for any off-site event" },
                   { label: "Full Bar", icon: "🍷", desc: "Beer, wine & spirits" },
                 ].map((s) => (
-                  <div key={s.label} className="bg-[#FDF6E3] rounded-xl p-4 border border-[#C9A84C]/15">
+                  <div key={s.label} className="bg-[#FFF8EE] rounded-xl p-4 border border-[#D4941A]/15">
                     <div className="text-2xl mb-1">{s.icon}</div>
-                    <p className="font-bold text-[#2C2C2C] text-sm" style={{ fontFamily: "var(--font-oranienbaum), serif" }}>{s.label}</p>
+                    <p className="font-bold text-[#1E0E05] text-sm" style={{ fontFamily: "var(--font-oranienbaum), serif" }}>{s.label}</p>
                     <p className="text-gray-500 text-xs mt-0.5">{s.desc}</p>
                   </div>
                 ))}

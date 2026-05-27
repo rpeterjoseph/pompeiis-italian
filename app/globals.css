@@ -3,21 +3,21 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FDF6E3;
-  --foreground: #2C2C2C;
+  --background: #FFF8EE;
+  --foreground: #1E0E05;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-red: #8B1A1A;
-  --color-red-light: #A52020;
-  --color-cream: #FDF6E3;
-  --color-cream-dark: #F5EAC8;
-  --color-olive: #5C6B2E;
-  --color-charcoal: #2C2C2C;
-  --color-gold: #C9A84C;
-  --color-gold-light: #E8C96B;
+  --color-red: #C8332A;
+  --color-red-light: #D44035;
+  --color-cream: #FFF8EE;
+  --color-cream-dark: #F2E0C4;
+  --color-olive: #3D5C34;
+  --color-charcoal: #1E0E05;
+  --color-gold: #D4941A;
+  --color-gold-light: #E8A832;
 }
 
 body {

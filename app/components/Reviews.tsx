@@ -22,7 +22,7 @@ function StarRating({ rating }: { rating: number }) {
       {[1, 2, 3, 4, 5].map((star) => (
         <svg
           key={star}
-          className={`w-4 h-4 ${star <= rating ? "text-[#C9A84C]" : "text-gray-300"}`}
+          className={`w-4 h-4 ${star <= rating ? "text-[#D4941A]" : "text-gray-300"}`}
           fill="currentColor"
           viewBox="0 0 20 20"
         >
@@ -35,25 +35,25 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="py-20 bg-[#FDF6E3]" aria-label="Customer reviews">
+    <section id="reviews" className="py-20 bg-[#FFF8EE]" aria-label="Customer reviews">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <p className="text-[#8B1A1A] text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+          <p className="text-[#C8332A] text-sm font-semibold tracking-[0.2em] uppercase mb-3">
             What Our Guests Say
           </p>
           <h2
-            className="text-4xl sm:text-5xl font-bold text-[#2C2C2C] mb-4"
+            className="text-4xl sm:text-5xl font-bold text-[#1E0E05] mb-4"
             style={{ fontFamily: "var(--font-oranienbaum), serif" }}
           >
             Loved by the
-            <span className="text-[#8B1A1A] italic"> Blue Water Community</span>
+            <span className="text-[#C8332A] italic"> Blue Water Community</span>
           </h2>
-          <div className="w-16 h-1 bg-[#C9A84C] mx-auto mb-6 rounded-full" />
+          <div className="w-16 h-1 bg-[#D4941A] mx-auto mb-6 rounded-full" />
 
-          <div className="inline-flex items-center gap-4 bg-white border border-[#C9A84C]/20 rounded-2xl px-6 py-4 shadow-sm">
+          <div className="inline-flex items-center gap-4 bg-white border border-[#D4941A]/20 rounded-2xl px-6 py-4 shadow-sm">
             <div className="text-center">
               <div
-                className="text-4xl font-bold text-[#2C2C2C]"
+                className="text-4xl font-bold text-[#1E0E05]"
                 style={{ fontFamily: "var(--font-oranienbaum), serif" }}
               >
                 4.5
@@ -63,9 +63,9 @@ export default function Reviews() {
             </div>
             <div className="w-px h-12 bg-gray-200" />
             <div className="text-left">
-              <p className="font-semibold text-[#2C2C2C] text-sm">#6 of 104 Restaurants</p>
+              <p className="font-semibold text-[#1E0E05] text-sm">#6 of 104 Restaurants</p>
               <p className="text-gray-500 text-xs">in Port Huron · 179 reviews</p>
-              <p className="text-[#5C6B2E] text-xs font-medium mt-1">Family-Friendly · Local Favorite</p>
+              <p className="text-[#3D5C34] text-xs font-medium mt-1">Family-Friendly · Local Favorite</p>
             </div>
           </div>
         </div>
@@ -84,8 +84,8 @@ export default function Reviews() {
                 &ldquo;{review.text}&rdquo;
               </blockquote>
               <footer className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-[#8B1A1A]/10 rounded-full flex items-center justify-center">
-                  <svg className="w-4 h-4 text-[#8B1A1A]" fill="currentColor" viewBox="0 0 20 20">
+                <div className="w-8 h-8 bg-[#C8332A]/10 rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-[#C8332A]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -104,7 +104,7 @@ export default function Reviews() {
           ].map((item) => (
             <div key={item.label} className="text-center bg-white rounded-xl p-5 shadow-sm border border-gray-100">
               <div
-                className="text-3xl font-bold text-[#8B1A1A] mb-1"
+                className="text-3xl font-bold text-[#C8332A] mb-1"
                 style={{ fontFamily: "var(--font-oranienbaum), serif" }}
               >
                 {item.stat}

@@ -1,3 +1,5 @@
+import ImagePlaceholder from "./ImagePlaceholder";
+
 export default function About() {
   const highlights = [
     {
@@ -43,19 +45,19 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-[#8B1A1A] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Our Story</p>
+            <p className="text-[#C8332A] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Our Story</p>
             <h2
-              className="text-4xl sm:text-5xl font-bold text-[#2C2C2C] mb-6 leading-tight"
+              className="text-4xl sm:text-5xl font-bold text-[#1E0E05] mb-6 leading-tight"
               style={{ fontFamily: "var(--font-oranienbaum), serif" }}
             >
               A Family Tradition
               <br />
-              <span className="text-[#8B1A1A] italic">Since 2002</span>
+              <span className="text-[#C8332A] italic">Since 2002</span>
             </h2>
-            <div className="w-16 h-1 bg-[#C9A84C] mb-8 rounded-full" />
+            <div className="w-16 h-1 bg-[#D4941A] mb-8 rounded-full" />
 
             {/* Motto callout */}
-            <blockquote className="border-l-4 border-[#C9A84C] pl-5 mb-7 italic text-[#2C2C2C]">
+            <blockquote className="border-l-4 border-[#D4941A] pl-5 mb-7 italic text-[#1E0E05]">
               <p className="text-lg font-medium" style={{ fontFamily: "var(--font-oranienbaum), serif" }}>
                 &ldquo;Consistency, Great Food &amp; Great Service.&rdquo;
               </p>
@@ -81,30 +83,36 @@ export default function About() {
             <div className="flex flex-wrap gap-3">
               <a
                 href="tel:+18109663400"
-                className="bg-[#8B1A1A] hover:bg-[#A52020] text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5 shadow-md"
+                className="bg-[#C8332A] hover:bg-[#D44035] text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5 shadow-md"
               >
                 Call Us Today
               </a>
               <a
                 href="/about"
-                className="border-2 border-[#8B1A1A] text-[#8B1A1A] hover:bg-[#8B1A1A] hover:text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+                className="border-2 border-[#C8332A] text-[#C8332A] hover:bg-[#C8332A] hover:text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5"
               >
                 Our Full Story
               </a>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <ImagePlaceholder
+              label="Pompeii's Dining Room"
+              sublabel="Restaurant interior photo"
+              className="h-56 mb-5"
+            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {highlights.map((item) => (
               <div
                 key={item.title}
-                className="bg-[#FDF6E3] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 border border-[#C9A84C]/10"
+                className="bg-[#FFF8EE] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 border border-[#D4941A]/10"
               >
-                <div className="w-12 h-12 bg-[#8B1A1A]/10 rounded-xl flex items-center justify-center text-[#8B1A1A] mb-4">
+                <div className="w-12 h-12 bg-[#C8332A]/10 rounded-xl flex items-center justify-center text-[#C8332A] mb-4">
                   {item.icon}
                 </div>
                 <h3
-                  className="font-bold text-[#2C2C2C] mb-2"
+                  className="font-bold text-[#1E0E05] mb-2"
                   style={{ fontFamily: "var(--font-oranienbaum), serif" }}
                 >
                   {item.title}
@@ -112,6 +120,7 @@ export default function About() {
                 <p className="text-gray-500 text-sm leading-relaxed">{item.description}</p>
               </div>
             ))}
+            </div>
           </div>
         </div>
       </div>

@@ -48,18 +48,18 @@ export default function Catering() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Text */}
           <div>
-            <p className="text-[#8B1A1A] text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+            <p className="text-[#C8332A] text-sm font-semibold tracking-[0.2em] uppercase mb-3">
               Events & Catering
             </p>
             <h2
-              className="text-4xl sm:text-5xl font-bold text-[#2C2C2C] mb-4 leading-tight"
+              className="text-4xl sm:text-5xl font-bold text-[#1E0E05] mb-4 leading-tight"
               style={{ fontFamily: "var(--font-oranienbaum), serif" }}
             >
               Bring Italian to
               <br />
-              <span className="text-[#8B1A1A] italic">Your Next Event</span>
+              <span className="text-[#C8332A] italic">Your Next Event</span>
             </h2>
-            <div className="w-16 h-1 bg-[#C9A84C] mb-6 rounded-full" />
+            <div className="w-16 h-1 bg-[#D4941A] mb-6 rounded-full" />
             <p className="text-gray-600 text-lg leading-relaxed mb-4">
               Whether you&apos;re planning an intimate family celebration or a large corporate dinner,
               Pompeii&apos;s has the food, space, and experience to make it special.
@@ -71,14 +71,14 @@ export default function Catering() {
             </p>
 
             {/* Contact for catering */}
-            <div className="bg-[#FDF6E3] border border-[#C9A84C]/20 rounded-2xl p-6 mb-6">
-              <p className="font-semibold text-[#2C2C2C] mb-3" style={{ fontFamily: "var(--font-oranienbaum), serif" }}>
+            <div className="bg-[#FFF8EE] border border-[#D4941A]/20 rounded-2xl p-6 mb-6">
+              <p className="font-semibold text-[#1E0E05] mb-3" style={{ fontFamily: "var(--font-oranienbaum), serif" }}>
                 Plan Your Event
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
                   href="tel:+18109663400"
-                  className="flex items-center justify-center gap-2 bg-[#8B1A1A] hover:bg-[#A52020] text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5 shadow-md"
+                  className="flex items-center justify-center gap-2 bg-[#C8332A] hover:bg-[#D44035] text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5 shadow-md"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -87,7 +87,7 @@ export default function Catering() {
                 </a>
                 <a
                   href="mailto:pompeiis@sbcglobal.net"
-                  className="flex items-center justify-center gap-2 border-2 border-[#8B1A1A] text-[#8B1A1A] hover:bg-[#8B1A1A] hover:text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+                  className="flex items-center justify-center gap-2 border-2 border-[#C8332A] text-[#C8332A] hover:bg-[#C8332A] hover:text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-0.5"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -103,13 +103,13 @@ export default function Catering() {
             {cateringFeatures.map((feature) => (
               <div
                 key={feature.title}
-                className="bg-[#FDF6E3] rounded-2xl p-5 border border-[#C9A84C]/15 hover:border-[#C9A84C]/40 hover:shadow-md transition-all duration-200"
+                className="bg-[#FFF8EE] rounded-2xl p-5 border border-[#D4941A]/15 hover:border-[#D4941A]/40 hover:shadow-md transition-all duration-200"
               >
-                <div className="w-10 h-10 bg-[#8B1A1A]/10 rounded-xl flex items-center justify-center text-[#8B1A1A] mb-3">
+                <div className="w-10 h-10 bg-[#C8332A]/10 rounded-xl flex items-center justify-center text-[#C8332A] mb-3">
                   {feature.icon}
                 </div>
                 <h3
-                  className="font-bold text-[#2C2C2C] mb-1 text-sm"
+                  className="font-bold text-[#1E0E05] mb-1 text-sm"
                   style={{ fontFamily: "var(--font-oranienbaum), serif" }}
                 >
                   {feature.title}
