@@ -5,23 +5,13 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       aria-label="Hero section"
     >
-      {/*
-        ── HERO BACKGROUND PHOTO SLOT ───────────────────────────────────
-        Add a full-bleed restaurant/food photo here:
-        1. Copy photo  →  /public/images/hero-bg.jpg
-        2. Add `import Image from "next/image";` at top of file
-        3. Replace this comment block with:
-           <Image
-             src="/images/hero-bg.jpg"
-             alt="Pompeii's Pizzeria interior"
-             fill
-             className="object-cover object-center z-0"
-             priority
-           />
-        The gradient overlay below will darken it automatically.
-        ─────────────────────────────────────────────────────────────── */}
+      <img
+        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80"
+        alt="Pompeii's Pizzeria interior"
+        className="absolute inset-0 w-full h-full object-cover object-center z-0"
+      />
       <div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 opacity-85"
         style={{
           background:
             "linear-gradient(135deg, #150800 0%, #2A0A02 30%, #1E0E05 60%, #150800 100%)",

@@ -3,7 +3,6 @@ import About from "./components/About";
 import IncludedBanner from "./components/IncludedBanner";
 import Reviews from "./components/Reviews";
 import GlutenFree from "./components/GlutenFree";
-import ImagePlaceholder from "./components/ImagePlaceholder";
 import Link from "next/link";
 
 const featuredDishes = [
@@ -13,6 +12,7 @@ const featuredDishes = [
     category: "Traditional Pasta",
     price: "$15.95",
     badge: "Chef's Favorite",
+    image: "https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=600&q=80",
   },
   {
     name: "Pompeii's Pie Pizza",
@@ -20,6 +20,7 @@ const featuredDishes = [
     category: "Specialty Pizza",
     price: "$15.00+",
     badge: "Signature",
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80",
   },
   {
     name: "Blush Sauce Manicotti",
@@ -27,6 +28,7 @@ const featuredDishes = [
     category: "Traditional Pasta",
     price: "$14.95",
     badge: "Guest Favorite",
+    image: "https://images.unsplash.com/photo-1588013273468-315fd88ea34c?w=600&q=80",
   },
   {
     name: "Lasagna",
@@ -34,6 +36,7 @@ const featuredDishes = [
     category: "Traditional Pasta",
     price: "$13.95",
     badge: "Classic",
+    image: "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=600&q=80",
   },
 ];
 
@@ -90,8 +93,11 @@ export default function Home() {
                 key={dish.name}
                 className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex flex-col"
               >
-                {/* Dish photo placeholder */}
-                <ImagePlaceholder label={dish.name} className="h-44 rounded-none" />
+                <img
+                  src={dish.image}
+                  alt={dish.name}
+                  className="w-full h-44 object-cover"
+                />
                 <div className="bg-[#C8332A] px-4 py-3 flex items-center justify-between">
                   <span className="text-white/70 text-xs uppercase tracking-wider">{dish.category}</span>
                   <span className="text-[10px] font-bold bg-[#D4941A] text-[#1E0E05] px-2 py-0.5 rounded-full">
@@ -142,12 +148,16 @@ export default function Home() {
             <div className="w-14 h-1 bg-[#D4941A] mx-auto mt-4 rounded-full" />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <ImagePlaceholder label="Dining Room Interior" className="aspect-[4/3]" />
-            <ImagePlaceholder label="Stone Oven Pizza" className="aspect-[4/3]" />
-            <ImagePlaceholder label="Homemade Pasta" className="aspect-[4/3]" />
-            <ImagePlaceholder label="Full Bar" className="aspect-[4/3]" />
-            <ImagePlaceholder label="Private Event Setup" className="aspect-[4/3]" />
-            <ImagePlaceholder label="Restaurant Exterior" className="aspect-[4/3]" />
+            {[
+              { label: "Dining Room Interior", src: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=800&q=80" },
+              { label: "Stone Oven Pizza", src: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80" },
+              { label: "Homemade Pasta", src: "https://images.unsplash.com/photo-1498579150354-977475b7ea0b?w=800&q=80" },
+              { label: "Full Bar", src: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80" },
+              { label: "Private Event Setup", src: "https://images.unsplash.com/photo-1536392706976-e486e2ba97af?w=800&q=80" },
+              { label: "Restaurant Exterior", src: "https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?w=800&q=80" },
+            ].map(({ label, src }) => (
+              <img key={label} src={src} alt={label} className="w-full aspect-[4/3] object-cover rounded-2xl" />
+            ))}
           </div>
         </div>
       </section>

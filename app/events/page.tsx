@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageHero from "../components/PageHero";
-import ImagePlaceholder from "../components/ImagePlaceholder";
 
 export const metadata: Metadata = {
   title: "Events",
@@ -42,10 +41,10 @@ export default function EventsPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Private dining room photo */}
-          <ImagePlaceholder
-            label="Private Dining Room"
-            sublabel="Up to 120 guests — event setup photo"
-            className="h-80 mb-14"
+          <img
+            src="https://images.unsplash.com/photo-1561065270-5c2af775b542?w=1400&q=80"
+            alt="Private dining room setup for events"
+            className="w-full h-80 object-cover rounded-2xl mb-14"
           />
           <div className="text-center mb-12">
             <p className="text-[#C8332A] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Perfect For</p>

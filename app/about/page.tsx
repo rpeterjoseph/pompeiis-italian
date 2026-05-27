@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageHero from "../components/PageHero";
-import ImagePlaceholder from "../components/ImagePlaceholder";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -46,10 +45,10 @@ export default function AboutPage() {
               <div className="w-14 h-1 bg-[#D4941A] mb-8 rounded-full" />
 
               {/* Restaurant photo placeholder */}
-              <ImagePlaceholder
-                label="Restaurant Interior"
-                sublabel="Pompeii's dining room photo"
-                className="h-60 mb-8"
+              <img
+                src="https://images.unsplash.com/photo-1667388969250-1c7220bf3f37?w=900&q=80"
+                alt="Pompeii's restaurant interior"
+                className="w-full h-60 object-cover rounded-2xl mb-8"
               />
 
               <div className="space-y-5 text-gray-600 leading-relaxed">

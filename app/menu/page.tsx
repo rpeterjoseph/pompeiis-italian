@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageHero from "../components/PageHero";
-import ImagePlaceholder from "../components/ImagePlaceholder";
 import FullMenu from "../components/FullMenu";
 
 export const metadata: Metadata = {
@@ -20,10 +19,10 @@ export default function MenuPage() {
 
       {/* Menu banner photo — replace with a wide food-spread or pizza shot */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
-        <ImagePlaceholder
-          label="Stone Oven Pizza & Fresh Pasta Spread"
-          sublabel="Wide food photo — replace with actual kitchen/food shot"
-          className="h-64"
+        <img
+          src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=1400&q=80"
+          alt="Stone oven pizza and fresh pasta spread"
+          className="w-full h-64 object-cover rounded-2xl"
         />
       </div>
 

@@ -1,4 +1,3 @@
-import ImagePlaceholder from "./ImagePlaceholder";
 
 export default function About() {
   const highlights = [
@@ -97,10 +96,10 @@ export default function About() {
           </div>
 
           <div>
-            <ImagePlaceholder
-              label="Pompeii's Dining Room"
-              sublabel="Restaurant interior photo"
-              className="h-56 mb-5"
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80"
+              alt="Pompeii's dining room interior"
+              className="w-full h-56 object-cover rounded-2xl mb-5"
             />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {highlights.map((item) => (

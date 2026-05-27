@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageHero from "../components/PageHero";
-import ImagePlaceholder from "../components/ImagePlaceholder";
 
 export const metadata: Metadata = {
   title: "Catering",
@@ -44,10 +43,10 @@ export default function CateringPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Catering food photo */}
-          <ImagePlaceholder
-            label="Pompeii's Catering Trays"
-            sublabel="Food spread / event setup photo"
-            className="h-72 mb-14"
+          <img
+            src="https://images.unsplash.com/photo-1562050344-f7ad946cee35?w=1400&q=80"
+            alt="Pompeii's catering spread"
+            className="w-full h-72 object-cover rounded-2xl mb-14"
           />
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageHero from "../components/PageHero";
-import ImagePlaceholder from "../components/ImagePlaceholder";
 
 export const metadata: Metadata = {
   title: "Contact & Hours",
@@ -124,10 +123,10 @@ export default function ContactPage() {
               </div>
 
               {/* Exterior photo */}
-              <ImagePlaceholder
-                label="Restaurant Exterior"
-                sublabel="1120 Military St, Port Huron, MI"
-                className="h-48 mb-5"
+              <img
+                src="https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?w=900&q=80"
+                alt="Restaurant exterior at 1120 Military St, Port Huron, MI"
+                className="w-full h-48 object-cover rounded-2xl mb-5"
               />
 
               {/* Services */}
