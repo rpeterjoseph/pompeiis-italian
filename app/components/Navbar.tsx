@@ -29,22 +29,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3" aria-label="Pompeii's Pizzeria home">
-            {/*
-              ── ICON LOGO SLOT ───────────────────────────────────────────
-              Add your icon logo here:
-              1. Copy logo file  →  /public/images/logo-icon.png
-              2. Replace this div with:
-                 import Image from "next/image";
-                 <Image src="/images/logo-icon.png" width={36} height={36} alt="Pompeii's" className="object-contain" />
-              ─────────────────────────────────────────────────────────── */}
-            <div
-              className="w-9 h-9 border border-dashed border-[#D4941A]/50 rounded-lg flex items-center justify-center flex-shrink-0"
-              title="Add logo-icon.png to /public/images/"
-            >
-              <svg className="w-4 h-4 text-[#D4941A]/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/logo-icon-white.png"
+              width={40}
+              height={40}
+              alt="Pompeii's"
+              className="object-contain flex-shrink-0"
+            />
             <span
               className="text-xl font-bold text-[#D4941A]"
               style={{ fontFamily: "var(--font-oranienbaum), serif" }}
